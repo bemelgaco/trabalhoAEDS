@@ -353,20 +353,29 @@ int main()
     int numEstadias = 0;
     int numQuartos = 0;
 
-    int opcao;
+    int opcao = 0;
 
+
+
+    printf("\nMENU\n");
+    printf("1. Cadastrar Cliente;\n");
+    printf("2. Cadastrar Funcionario;\n");
+    printf("3. Cadastrar Quarto;\n");
+    printf("4. Cadastrar Estadia;\n");
+    printf("5. Pesquisar Cliente;\n");
+    printf("6. Pesquisar Funcionario;\n");
+    printf("7. Mostrar Estadias de Cliente;\n");
+    printf("8. Sair.\n");
+
+    printf("Escolha uma opcao: ");
     do
     {
-        printf("\nMENU\n");
-        printf("1. Cadastrar Cliente\n");
-        printf("2. Cadastrar Funcionario\n");
-        printf("3. Cadastrar Quarto\n");
-        printf("4. Cadastrar Estadia\n");
-        printf("5. Pesquisar Cliente\n");
-        printf("6. Pesquisar Funcionario\n");
-        printf("7. Mostrar Estadias de Cliente\n");
-        printf("8. Sair\n");
-        printf("Escolha uma opcao: ");
+        if (opcao)
+        {
+          printf("\n //-----------------------------// \n\n");
+          printf("Escolha outra opção: ");
+        } 
+
         scanf("%d", &opcao);
         getchar();
 
